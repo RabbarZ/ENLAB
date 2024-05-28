@@ -1,14 +1,19 @@
 package com.ibhuerli.URLShortener.models;
 
-import java.net.URL;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.UUID;
 
+@Document("ShortUrl")
 public class ShortUrl {
+    @Id
     private UUID id;
 
     private String shortUrl;
 
-    private URL Url;
+    // TODO: change to URL type
+    private String Url;
 
 
     public UUID getId() {
@@ -27,11 +32,11 @@ public class ShortUrl {
         this.shortUrl = shortUrl;
     }
 
-    public URL getUrl() {
+    public String getUrl() {
         return Url;
     }
 
-    public void setUrl(URL url) {
+    public void setUrl(String url) {
         Url = url;
     }
 }
