@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.ibhuerli</groupId>
 	<artifactId>URLShortener</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>URLShortener</name>
 	<description>URL Shortener for module ENLAB</description>
 	<properties>
