@@ -6,9 +6,9 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DB_URL: mongodb://mongodb/UrlShortener
+      DB_URL: mongodb://shortenerdatabase/UrlShortener
 
-  mongodb:
+  shortenerdatabase:
     image: mongo:8.0.0-rc4-jammy
     restart: always
     ports:
@@ -22,7 +22,7 @@ services:
     ports:
       - "8084:8081"
     links:
-      - "mongodb:mongo"
+      - "shortenerdatabase:mongo"
 
 volumes:
   UrlShortener:
