@@ -1,6 +1,7 @@
 package com.ibhuerli.URLShortener.models;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.UUID;
@@ -10,9 +11,9 @@ public class ShortUrl {
     @Id
     private UUID id;
 
+    @Indexed(unique = true)
     private String shortUrl;
 
-    // TODO: change to URL type
     private String Url;
 
 
