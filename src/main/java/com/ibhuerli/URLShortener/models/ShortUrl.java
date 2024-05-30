@@ -16,7 +16,6 @@ public class ShortUrl {
 
     private String Url;
 
-
     public UUID getId() {
         return id;
     }

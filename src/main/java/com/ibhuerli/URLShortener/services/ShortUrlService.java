@@ -25,7 +25,7 @@ public class ShortUrlService {
         return this.shortUrlRepository.findByShortUrl(shortUrl);
     }
 
-    public Optional<ShortUrl> getShortUrl(UUID id){
+    public Optional<ShortUrl> getShortUrlById(UUID id){
         return this.shortUrlRepository.findById(id);
     }
 
